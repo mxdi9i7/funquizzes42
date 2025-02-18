@@ -1,8 +1,21 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Quiz Time',
+  description: 'Learn how Quiz Time protects and handles your personal information. Read our comprehensive privacy policy.',
+  openGraph: {
+    title: 'Privacy Policy - Quiz Time',
+    description: 'Learn how Quiz Time protects and handles your personal information.',
+  }
+}
+
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
-      <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8">Privacy Policy</h1>
+    <main className="min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
+      <article className="container mx-auto px-4 py-12">
+        <header>
+          <h1 className="text-4xl font-bold text-gray-800 mb-8">Privacy Policy</h1>
+        </header>
         
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
           <section className="mb-8">
@@ -45,7 +58,7 @@ export default function PrivacyPolicy() {
             </p>
           </section>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 } 

@@ -1,12 +1,23 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service - Quiz Time',
+  description: 'Read our terms of service to understand your rights and responsibilities when using Quiz Time.',
+  openGraph: {
+    title: 'Terms of Service - Quiz Time',
+    description: 'Read our terms of service to understand your rights and responsibilities when using Quiz Time.',
+  }
+}
+
 export default function TermsOfService() {
   return (
-    <div className='min-h-screen bg-gradient-to-r from-blue-100 to-purple-100'>
-      <div className='container mx-auto px-4 py-12'>
-        <h1 className='text-4xl font-bold text-gray-800 mb-8'>
-          Terms of Service
-        </h1>
+    <main className="min-h-screen bg-gradient-to-r from-blue-100 to-purple-100">
+      <article className="container mx-auto px-4 py-12">
+        <header>
+          <h1 className="text-4xl font-bold text-gray-800 mb-8">Terms of Service</h1>
+        </header>
 
-        <div className='bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg'>
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
           <section className='mb-8'>
             <h2 className='text-2xl font-semibold text-gray-800 mb-4'>
               1. Acceptance of Terms
@@ -55,7 +66,7 @@ export default function TermsOfService() {
             </p>
           </section>
         </div>
-      </div>
-    </div>
+      </article>
+    </main>
   );
 }

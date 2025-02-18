@@ -1,15 +1,28 @@
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Quiz Time',
+  description: 'Get in touch with Quiz Time. We\'re here to help with any questions or feedback you may have.',
+  openGraph: {
+    title: 'Contact Us - Quiz Time',
+    description: 'Get in touch with Quiz Time. We\'re here to help with any questions or feedback you may have.',
+  }
+}
+
 export default function Contact() {
   return (
-    <div className='min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 relative overflow-hidden'>
+    <main className="min-h-screen bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 relative overflow-hidden">
       {/* Decorative elements */}
-      <div className='absolute top-0 left-0 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob'></div>
-      <div className='absolute top-0 right-0 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000'></div>
-      <div className='absolute -bottom-8 left-20 w-64 h-64 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000'></div>
+      <div className="absolute top-0 left-0 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" aria-hidden="true"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" aria-hidden="true"></div>
+      <div className="absolute -bottom-8 left-20 w-64 h-64 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" aria-hidden="true"></div>
 
-      <div className='container mx-auto px-4 py-16 relative z-10'>
-        <h1 className='text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text'>
-          Get in Touch
-        </h1>
+      <div className="container mx-auto px-4 py-16 relative z-10">
+        <header>
+          <h1 className="text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+            Get in Touch
+          </h1>
+        </header>
 
         <div className='bg-white/90 backdrop-blur-lg rounded-3xl p-8 shadow-2xl max-w-2xl mx-auto border border-white/50 transform hover:scale-[1.02] transition-all duration-300'>
           <form className='space-y-8'>
@@ -74,6 +87,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
