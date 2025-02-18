@@ -3,7 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { PageProps } from '../../../../.next/types/app/page';
 
 interface Question {
   question: string;
@@ -14,7 +13,7 @@ interface Question {
 interface QuizData {
   questions: Question[];
 }
-export default function QuizPage(props: PageProps) {
+export default function QuizPage() {
   const [quizData, setQuizData] = useState<QuizData | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
