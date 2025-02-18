@@ -20,7 +20,13 @@ export default function Home() {
             {['Home', 'Contact', 'Leaderboard'].map((item) => (
               <Link
                 key={item}
-                href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+                href={
+                  item === 'Home'
+                    ? '/'
+                    : item === 'Leaderboard'
+                    ? '/quiz/result'
+                    : `/${item.toLowerCase()}`
+                }
                 className='relative text-gray-700 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:bg-clip-text font-medium transition-all duration-300 group'
               >
                 {item}
