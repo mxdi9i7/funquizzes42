@@ -1,0 +1,74 @@
+{
+  "questions": [
+    {
+      "question": "In which year did Christopher Columbus first reach the Americas?",
+      "options": ["1492", "1498", "1486", "1500"],
+      "correctAnswer": "1492"
+    },
+    {
+      "question": "Who was the first President of the United States?",
+      "options": [
+        "Thomas Jefferson",
+        "John Adams",
+        "George Washington",
+        "Benjamin Franklin"
+      ],
+      "correctAnswer": "George Washington"
+    },
+    {
+      "question": "The Industrial Revolution began in which country?",
+      "options": ["France", "Germany", "United States", "Great Britain"],
+      "correctAnswer": "Great Britain"
+    },
+    {
+      "question": "Which ancient wonder was located in Alexandria, Egypt?",
+      "options": [
+        "The Colossus of Rhodes",
+        "The Lighthouse",
+        "The Hanging Gardens",
+        "The Great Pyramid"
+      ],
+      "correctAnswer": "The Lighthouse"
+    },
+    {
+      "question": "Who was the first Emperor of China?",
+      "options": ["Qin Shi Huang", "Sun Yat-sen", "Kublai Khan", "Wu Zetian"],
+      "correctAnswer": "Qin Shi Huang"
+    },
+    {
+      "question": "The Treaty of Versailles was signed in what year, officially ending World War I?",
+      "options": ["1918", "1919", "1920", "1921"],
+      "correctAnswer": "1919"
+    },
+    {
+      "question": "Which civilization built the Machu Picchu?",
+      "options": ["Aztecs", "Mayans", "Incas", "Olmecs"],
+      "correctAnswer": "Incas"
+    },
+    {
+      "question": "Who wrote 'The Communist Manifesto'?",
+      "options": [
+        "Vladimir Lenin",
+        "Joseph Stalin",
+        "Friedrich Engels and Karl Marx",
+        "Leon Trotsky"
+      ],
+      "correctAnswer": "Friedrich Engels and Karl Marx"
+    },
+    {
+      "question": "The Renaissance period began in which country?",
+      "options": ["France", "England", "Italy", "Spain"],
+      "correctAnswer": "Italy"
+    },
+    {
+      "question": "Which event marked the start of World War II in Europe?",
+      "options": [
+        "The invasion of Poland",
+        "The Battle of Britain",
+        "The invasion of France",
+        "The bombing of Pearl Harbor"
+      ],
+      "correctAnswer": "The invasion of Poland"
+    }
+  ]
+}
