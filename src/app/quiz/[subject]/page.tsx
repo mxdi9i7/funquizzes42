@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { PageProps } from '../../../../.next/types/app/page';
 
 interface Question {
   question: string;
@@ -13,8 +14,7 @@ interface Question {
 interface QuizData {
   questions: Question[];
 }
-
-export default function QuizPage({ params }: { params: { subject: string } }) {
+export default function QuizPage(props: PageProps) {
   const [quizData, setQuizData] = useState<QuizData | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -23,11 +23,13 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
   const [showUsernameInput, setShowUsernameInput] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const router = useRouter();
+  const params = useParams();
+  const subject = params.subject;
 
   useEffect(() => {
     const loadQuizData = async () => {
       try {
-        const response = await import(`@/quiz-data/${params.subject}.json`);
+        const response = await import(`@/quiz-data/${subject}.json`);
         setQuizData(response);
       } catch (error) {
         console.error('Failed to load quiz data:', error);
@@ -35,7 +37,7 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
       }
     };
     loadQuizData();
-  }, [params.subject, router]);
+  }, [subject, router]);
 
   if (!quizData) {
     return (
@@ -73,8 +75,8 @@ export default function QuizPage({ params }: { params: { subject: string } }) {
 
   const handleUsernameSubmit = () => {
     if (username.trim()) {
-      localStorage.setItem(`${params.subject}_score`, (score + 100).toString());
-      localStorage.setItem(`${params.subject}_username`, username);
+      localStorage.setItem(`${subject}_score`, (score + 100).toString());
+      localStorage.setItem(`${subject}_username`, username);
       router.push('/quiz/result');
     }
   };
