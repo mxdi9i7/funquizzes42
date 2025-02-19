@@ -137,7 +137,7 @@ export default function QuizPage() {
             Incorrect Answer!
           </h2>
           <p className='text-gray-600 text-lg'>
-            Don't worry, you can try again.
+            Don&apos;t worry, you can try again.
           </p>
         </motion.div>
         <motion.button
