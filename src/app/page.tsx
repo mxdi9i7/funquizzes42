@@ -91,17 +91,24 @@ export default function Home() {
               © 2025 Quiz Time. All rights reserved.
             </div>
             <div className='flex space-x-8'>
-              {['Privacy Policy', 'Terms of Service', 'Contact Us'].map(
-                (item) => (
-                  <Link
-                    key={item}
-                    href={`/${item.toLowerCase().replace(' ', '-')}`}
-                    className='text-gray-600 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300'
-                  >
-                    {item}
-                  </Link>
-                )
-              )}
+              <Link
+                href='/privacy'
+                className='text-gray-600 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300'
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href='/terms'
+                className='text-gray-600 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300'
+              >
+                Terms of Service
+              </Link>
+              <Link
+                href='/contact'
+                className='text-gray-600 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 hover:bg-clip-text transition-all duration-300'
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
