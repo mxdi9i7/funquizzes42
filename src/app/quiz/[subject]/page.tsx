@@ -131,10 +131,13 @@ export default function QuizPage() {
         <motion.div
           initial={{ scale: 0.8 }}
           animate={{ scale: 1 }}
-          className='w-full max-w-2xl h-96 bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl flex items-center justify-center border-4 border-red-200'
+          className='w-full max-w-2xl text-center p-8'
         >
-          <p className='text-2xl font-medium text-gray-400'>
-            Advertisement Space
+          <h2 className='text-3xl font-bold text-red-600 mb-4'>
+            Incorrect Answer!
+          </h2>
+          <p className='text-gray-600 text-lg'>
+            Don't worry, you can try again.
           </p>
         </motion.div>
         <motion.button

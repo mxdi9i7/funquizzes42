@@ -49,15 +49,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Top Ad Banner */}
-        <div className='w-full h-48 bg-white/80 backdrop-blur-lg rounded-3xl mb-16 flex items-center justify-center shadow-2xl border border-white/50 transform hover:scale-[1.02] transition-all duration-300'>
-          <p className='text-gray-500 text-xl font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text'>
-            Premium Advertisement Space
-          </p>
-        </div>
-
         {/* Quiz Categories */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto'>
           {[
             {
               title: 'Geography',
@@ -87,21 +80,6 @@ export default function Home() {
               </div>
             </Link>
           ))}
-
-          {/* Side Ad Space */}
-          <div className='bg-white/90 backdrop-blur-lg rounded-3xl p-10 shadow-2xl border border-white/50 flex flex-col items-center justify-center space-y-4 hover:shadow-3xl transition-all duration-300 transform hover:scale-105'>
-            <p className='text-xl font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text'>
-              Advertisement Space
-            </p>
-            <p className='text-gray-500'>Your Ad Could Be Here</p>
-          </div>
-        </div>
-
-        {/* Bottom Ad Banner */}
-        <div className='w-full h-48 bg-white/80 backdrop-blur-lg rounded-3xl mt-16 flex items-center justify-center shadow-2xl border border-white/50 transform hover:scale-[1.02] transition-all duration-300'>
-          <p className='text-gray-500 text-xl font-medium bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text'>
-            Featured Advertisement Space
-          </p>
         </div>
       </div>
 
